@@ -1,3 +1,9 @@
+"""
+
+QUE : Write a python function that takes two lists and return true if they have at least one common member.
+
+"""
+
 def common_in_two_list(l1, l2):
     status = False
     for a in l1:
