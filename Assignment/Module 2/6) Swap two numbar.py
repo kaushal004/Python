@@ -1,3 +1,11 @@
+"""
+
+QUE : Write python program that swap two number with temp variable and without temp variable.
+
+"""
+
+# SOLUTION :
+
 # using without any temp variable
 
 x = 5

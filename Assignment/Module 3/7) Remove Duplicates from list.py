@@ -3,6 +3,7 @@
 Write a python program to remove duplicates from a list.
 
 """
+# SOLUTION :
 
 l1 = [10, 15, 19, 10, 45, 75, 86, 45]
 

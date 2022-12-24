@@ -3,6 +3,7 @@
 QUE : Write a python program to convert a list of characters into string.
 
 """
+# SOLUTION :
 
 l1 = ['k', 'p', 'a', 'o']
 

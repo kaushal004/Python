@@ -3,6 +3,7 @@
 QUE : Write a python program to check a list is empty or not.
 
 """
+# SOLUTION :
 
 list = []
 

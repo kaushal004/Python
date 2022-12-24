@@ -1,3 +1,11 @@
+"""
+
+QUE : Write a Python program to get the Factorial number of given number.
+
+"""
+
+# SOLUTION : 
+
 num = int(input("Enter the number : "))
 factorial = 1
 if num < 0:

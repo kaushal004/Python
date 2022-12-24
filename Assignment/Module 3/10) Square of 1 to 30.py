@@ -4,6 +4,7 @@ QUE : Write a python program to generate and print a list of first and last 5 el
       numbers between 1 and 30.
 
 """
+# SOLUTION :
 
 l = list()
 for i in range(1,31):
