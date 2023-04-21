@@ -6,18 +6,11 @@ QUE : Write a python function that takes two lists and return true if they have 
 
 # SOLUTION :
 
-def common_in_two_list(l1, l2):
-    status = False
-    for a in l1:
-        for b in l2:
-            if a == b:
-                status = True
-            else:
-                status = False
-                return status
+def common(a, b):
+    result = [i for i in a if i in b]
+    return result
 
-    return status   
+a = [1,2,3]
+b = [3,5,4]
 
-x = [1, 4, 5, 9]
-y = [2, 9, 7, 6]
-print(common_in_two_list(x, y))
+print(common(a, b))
