@@ -1,0 +1,85 @@
+1) Product table :
+
+--> Query :
+
+CREATE TABLE product
+(
+    Prd_Id int(25) PRIMARY KEY AUTO_INCREMENT,
+    Prd_Name varchar(25),
+    Recommonded_Price varchar(25),
+    Category varchar(25)
+    
+ )
+
+2) Customer Table : 
+
+--> Query : 
+
+CREATE table customer
+(
+    CustomerID int PRIMARY KEY AUTO_INCREMENT,
+    FirstName varchar(25),
+    LastName varchar(25),
+    City varchar(25),
+    State varchar(25),
+    Zip varchar(25)
+    
+    
+    )
+
+3) Sales Table : 
+
+--> Query :
+
+create TABLE Sales
+(
+    Sales_Id int PRIMARY KEY AUTO_INCREMENT,
+    prd_Id int (200) ,
+    Cust_Id int (200),
+    SalesPrice varchar(25),
+    SalesDate varchar(200),
+    
+    prd_id_fk int(200),
+    cust_id_fk int(200),
+    
+    FOREIGN KEY(prd_id_fk) REFERENCES product(Prd_Id),
+    FOREIGN key (cust_id_fk) REFERENCES customer(CustomerID)
+    )
+
+
+
+---- > > > Quaries : 
+
+1) Return the FirstName, LastName , ProductName and Sales Price for all products sold in month of October 2022
+
+Query >-->  SELECT * FROM sales WHERE SalesDate="October 2022"
+
+2)
+
+
+3) Return the FirstName, LastName, SalePrice, Recommended SalePrice, and the difference between the SalePrice and Recommended SalePrice for all Sales. 
+   The difference must be returned as a positive number.
+
+Query >--> SELECT FirstName,LastName FROM customer;
+           SELECT SalesPrice FROM sales;
+           SELECT Recommonded_Price FROM product;
+
+
+Difference --)) SELECT product.Prd_Name,product.Recommonded_Price, sales.SalesPrice
+from product
+INNER JOIN sales 
+on product.Prd_Id = sales.Sales_Id
+
+
+4) Add the following Customer and Sale information to the database. (using store procedure)
+FirstName : Mansi
+LastName : Joshi
+City: Mumbai
+State:MH
+Zip:400001
+ProductID:3
+SalePrice:205
+SaleDate:05/12/2022
+
+Query >--> 
+
